@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --fundo-quadrado: #eee;
+    --fundo-quadrado-hover: rgb(220, 217, 217);
+    --azul: rgb(2, 66, 204);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--azul);
+    padding: 10px;
+}
+
+header img {
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    margin: 30px;
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background: var(--fundo-quadrado);
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: var(--fundo-quadrado);
+}
+
+.quadrado:hover {
+    background: var(--fundo-quadrado-hover);
+    color: var(--fundo-quadrado-hover);
+}
+
+.jogador, .vencedor {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: var(--azul);
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(15, 114, 213);
+}
+
+footer {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}

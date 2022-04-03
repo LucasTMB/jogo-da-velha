@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Ícone da Página-->
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/jogo-da-velha-branco.png">
+
+    <!--Título da Página-->
+    <title>Jogo da Velha</title>
+
+    <!--CSS da página-->
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="assets/img/jogo-da-velha-branco.png" alt="Logo da Página" width="70" height="70" onclick="reiniciar()">
+
+    </header>
+  
+    <main>
+
+        <h1 style="margin: 15px;">
+            Jogo da Velha
+        </h1>
+    
+        <div>
+            <div>
+                <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+            </div>
+    
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+            </div>
+    
+            <div>
+                <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+                <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div> <!--o this.id pega o valor estabelecido no ID-->
+            </div>
+    
+            <div class="jogador">
+                <label>
+                    Jogador:
+                </label>
+    
+                <label id="jogador-selecionado">
+    
+                </label>
+            </div>
+    
+            <div class="vencedor">
+                <label>
+                    Vencedor:
+                </label>
+    
+                <label id="vencedor-selecionado">
+    
+                </label>
+            </div>
+    
+            <div>
+                <button onclick="reiniciar()">
+                    <strong>Reiniciar</strong>
+                </button>
+            </div>
+    
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>
+            © Digital Innovation One.
+        </p>
+        <p>
+            Lucas Teixeira © 2022
+        </p>
+    </footer>
+    
+    <!--JS da página-->
+    <script src="assets/scripts.js"></script>
+
+</body>
+
+</html>
